@@ -1,0 +1,105 @@
+:root {
+    --primary-font: "Nova Mono";
+    --primary-boldness: 400;
+    --handwritting-font: "Dancing Script";
+    --background-color: rgb(220, 220, 220);
+    --font-color: rgb(54, 54, 54);
+    --font-size:200%;
+    --card-color: blanchedalmond;
+    --action-color: rgb(245, 139, 52);
+    --border-radius: 1.5rem;
+    --padding-size:2%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: var(--primary-font);
+    background-color: var(--background-color);
+    color: var(--font-color);
+}
+
+main h1 {
+    font-size: 3rem;
+    padding: var(--padding-size);
+    margin: var(--padding-size);
+}
+
+main .arrangement {
+    display: flex;
+    width: 100vw;
+}
+
+main article.card_container {
+    background-color: var(--card-color);
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 1rem;
+    padding: 1rem;
+    width: 45vw;
+    max-width: 700px;
+    border:2px solid var(--font-color);
+    box-shadow: 3px 3px 6px rgba(1, 1, 1, 0.9);
+}
+
+main article.card_container h2 {
+    font-size: calc(var(--font-size)*1.5);
+    margin: auto;
+}
+
+main article.card_container h3 {
+    font-size: calc(var(--font-size)*1);
+    text-transform: uppercase;
+    margin: var(--padding-size) var(--padding-size) 0 0;
+}
+
+main article.card_container article p {
+    font-size: calc(var(--font-size)*0.8);
+    margin: var(--padding-size);
+    padding: var(--padding-size);
+    padding-left:0 ;
+    margin-left: 0;
+}
+
+main article.card_container div blockquote {
+    font-family: var(--handwritting-font);
+    font-size: calc(var(--font-size)*0.8);
+    width: 75%;
+    padding: var(--padding-size);
+    margin: var(--padding-size) auto;
+}
+
+main article.card_container img {
+    border-radius: var(--border-radius);
+}
+
+main article.card_container button {
+    background-color: var(--action-color);
+    width: 33%;
+    padding: var(--padding-size) calc(var(--padding-size)*3);
+    margin-left: 65%;
+    border-radius: calc(var(--border-radius)/2);
+    box-shadow: 3px 3px 6px rgba(1, 1, 1, 0.9);
+    color: white;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.02);
+    }
+
+}
+
+main article.card_container:hover {
+    animation: zoomIn 1s forwards;
+}

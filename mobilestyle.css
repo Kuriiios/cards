@@ -1,0 +1,40 @@
+main .arrangement {
+    flex-direction: column;
+}
+
+main article.card_container {
+    width: 90vw;
+    height: auto;
+}
+
+main article.card_container h2 {
+    font-size: calc(var(--font-size));
+    margin: var(--padding-size);
+}
+
+main article.card_container h3 {
+    font-size: calc(var(--font-size));
+    margin: calc(var(--padding-size)/2);
+    margin-left: 0;
+}
+
+main article.card_container div p {
+    font-size: calc(var(--font-size)*0.6);
+    margin: calc(var(--padding-size)/2);
+    padding: calc(var(--padding-size)/2);
+}
+
+main article.card_container div blockquote {
+    font-size: calc(var(--font-size)*0.7);
+    width: 75%;
+    padding: calc(var(--padding-size)/2);
+    margin: calc(var(--padding-size)/2) auto;
+}
+
+main article.card_container button {
+    font-size: calc(var(--font-size)*0.5);
+    width: 50%;
+    padding: calc(var(--padding-size)*2);
+    margin: var(--padding-size) auto var(--padding-size) auto;
+    border-radius: calc(var(--border-radius));   
+}
